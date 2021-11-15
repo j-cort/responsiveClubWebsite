@@ -13,22 +13,22 @@
   <link rel="stylesheet" href="css/mobile.css">
   <title>Spartan | MMA GYM</title>
 </head>
-<body>
+<body id="home">
   <header>
     <!-- Navbar -->
     <nav id="navbar">
       <div class="container">
         <div class="navbar-content">
           <div class="logo">
-            <a href="index.html"><img src="img/logo-red.png" alt="spartan-logo">
+            <a href="#home"><img src="img/logo-red.png" alt="spartan-logo">
             <h1>SPARTAN MMA</h1></a>
           </div>
           <div class="navigation">
             <ul class="nav-list">
-              <li><a href="#showcase">Home</a></li>
+              <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a>
                 <ul class="nav-sublist">
-                  <li><a href="">Overview</a></li>
+                  <li><a href="#about">Overview</a></li>
                   <li><a href="">Location</a></li>
                   <li><a href="">Committee</a></li>
                   <li><a href="">Achievements</a></li>
@@ -70,10 +70,165 @@
   </header>
 
   <main>
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-intro">
+          <img src="img/helmet-blk.png" alt="helmet-icon" class="intro-icon">
+          <h1 class="intro-title">About Us</h1>
+        </div>
+        <div class="div separator-container">
+          <div class="separator"></div>
+        </div>
+        <article class="card grid">
+          <div class="about-left text">
+            <div class="badge">ORIGIN</div>
+            <h3>Established in <span class="secondary">2005.</span></h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam maiores velit voluptate!</p>
+            <p>Mollitia temporibus odio tenetur ab consequatur magnam nihil commodi ducimus dolorum numquam?</p>
+          </div>
+          <div class="about-center image">
+          </div>
+          <div class="about-right text">
+              <div class="badge">PHILOSOPHY</div>
+              <h3>Holistic <span class="secondary">physical</span> and <span class="secondary">mental</span> growth.</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias in, consequatur vitae quasi soluta hic laudantium labore ad id, amet dicta. Facere eveniet fugiat magnam quam?</p>
+              <p>Amet ipsam repellendus iste laborum odit?</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <!-- Schedule -->
+    <section id="schedule">
+      <div class="container">
+        <div class="section-intro flex-reverse">
+          <img src="img/helmet-red.png" alt="helmet-icon" class="intro-icon">
+          <h1 class="intro-title primary">Schedule</h1>
+        </div>
+        <div class="separator-container flex-right">
+          <div class="separator bg-primary"></div>
+        </div>
+        <article class="card grid">
+          <div class="schedule-left text">
+            <div class="image">
+            </div>
+            <div class="schedule-content">
+              <div class="badge">COMBAT</div>
+              <h3><span class="secondary">Fridays 19 - 21</span></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptatum?</p>
+              <div class="badge">FITNESS</div>
+              <h3><span class="secondary">Saturdays 11 - 13</span></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptatum?</p>
+              <div class="badge">TECHNIQUE</div>
+              <h3><span class="secondary">Wednesdays 18 - 20</span></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptatum?</p>
+            </div>
+          </div>
+          <div class="schedule-right text">
+            <div class="calendar">
+              <div class="badge">CALENDAR</div>
+              <h3><span class="secondary">JUL - DEC 2021</span></h3>
+              <p>Full calendar of training, events, workshops, tournaments and more. Lorem ipsum, dolor sit dolor sit! </p>
+              <a href="#"><div class="badge btn">VIEW CALENDAR</div></a>
+            </div>  
+          </div>
+          <div class="schedule-bottom image">
+            
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Join -->
+    <section id="join">
+      <div class="container">
+        <div class="section-intro">
+          <img src="img/helmet-blk.png" alt="helmet-icon" class="intro-icon">
+          <h1 class="intro-title">Join</h1>
+        </div>
+        <div class="separator"></div>
+        <article class="card grid">
+          <div class="join-left text">
+            <div class="badge">TRIAL CLASS</div>
+            <h3>Join a free <span class="secondary">taster class</span> to see if <span class="secondary">Spartan MMA</span> is right fo you!</h3>
+            
+            <form class="form-grid">
+              <div class="form-top">
+                <p>Fill in the form below to reserve your free class:</p> 
+              </div>
+              <div class="form-left">  
+                <input type="text" name="name" id="name" placeholder="Full Name">
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+                <input type="text" name="number" id="number" placeholder="Enter Phone">
+                
+              </div>
+                
+              <div class="form-right"> 
+               
+                <input type="radio" name="select-class" id="this-friday" class="radio">
+                <label for="this-friday" class="radio">This Friday 7pm</label>
+                <br>
+                <input type="radio" name="select-class" id="this-saturday" class="radio">
+                <label for="this-saturday" class="radio">This Saturday 11am</label>
+                <br>
+                <input type="radio" name="select-class" id="next-friday" class="radio">
+                <label for="next-friday" class="radio">Next Friday 7pm</label>
+                <br>
+                <input type="radio" name="select-class" id="next-saturday" class="radio">
+                <label for="next-saturday" class="radio">Next Saturday 11am</label>
+              </div>
+              <div class="form-bottom">
+                <input type="submit" value="Book Class" class="submit btn">
+              </div>
+            </form> 
+            <p class="center italic">If you decide to join, please discuss with your instructor at the end of class.</p>           
+          </div>
+          <div class="join-right image">
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
+  
+  <!-- Footer -->
   <footer>
-
+    <footer id="main-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Work With Us</h3>
+          <p>Pure nesciunt illum voluptates ipsa ipsum repellat mollitia laudantium nisi aspernatur, voluptatibus ab.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+          <h3>Email Newsletter</h3>
+          <p>Lorem ipsum, dolor sit amet.</p>
+          <form>
+            <input type="email" placeholder="Enter Email...">
+            <input type="submit" value="Subcribe" class="btn">
+          </form>
+        </div>
+        <div>
+          <h3>Site Links</h3>
+          <ul class="list">
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Join Our Club</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+          <a href="" class="btn">Join Now</a>
+        </div>
+        <div class="copyright">
+          <img src="/img/logo-white.png" alt="sparta-logo-white" class="footer-logo">
+          <p>
+            Copyright &copy; 2021, All Rights Reserved
+          </p>
+        </div>
+      </div>
   </footer>
 </body>
 </html>
